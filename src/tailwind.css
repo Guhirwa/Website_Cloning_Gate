@@ -836,14 +836,8 @@
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
-  .h-100 {
-    height: calc(var(--spacing) * 100);
-  }
   .h-15 {
     height: calc(var(--spacing) * 15);
-  }
-  .h-16 {
-    height: calc(var(--spacing) * 16);
   }
   .h-50 {
     height: calc(var(--spacing) * 50);
@@ -851,35 +845,50 @@
   .h-52 {
     height: calc(var(--spacing) * 52);
   }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
   .h-\[10\%\] {
     height: 10%;
+  }
+  .h-\[15\%\] {
+    height: 15%;
   }
   .h-\[20\%\] {
     height: 20%;
   }
+  .h-\[25\%\] {
+    height: 25%;
+  }
   .h-\[40\%\] {
     height: 40%;
+  }
+  .h-\[45\%\] {
+    height: 45%;
   }
   .h-\[50\%\] {
     height: 50%;
   }
+  .h-\[70\%\] {
+    height: 70%;
+  }
   .h-\[100\%\] {
     height: 100%;
   }
-  .h-\[15\%\] {
-    height: 15%;
+  .h-\[100\] {
+    height: 100;
+  }
+  .h-\[100vh\] {
+    height: 100vh;
   }
   .h-\[150\%\] {
     height: 150%;
   }
   .h-\[200\%\] {
     height: 200%;
-  }
-  .h-\[25\%\] {
-    height: 25%;
-  }
-  .h-\[100vh\] {
-    height: 100vh;
   }
   .h-screen {
     height: 100vh;
@@ -914,6 +923,9 @@
   .w-\[10\%\] {
     width: 10%;
   }
+  .w-\[15\%\] {
+    width: 15%;
+  }
   .w-\[20\%\] {
     width: 20%;
   }
@@ -923,17 +935,17 @@
   .w-\[40\%\] {
     width: 40%;
   }
+  .w-\[45\%\] {
+    width: 45%;
+  }
   .w-\[50\%\] {
     width: 50%;
   }
-  .w-\[100\%\] {
-    width: 100%;
-  }
-  .w-\[15\%\] {
-    width: 15%;
-  }
   .w-\[60\%\] {
     width: 60%;
+  }
+  .w-\[100\%\] {
+    width: 100%;
   }
   .w-\[100\] {
     width: 100;
@@ -1093,14 +1105,14 @@
   .rotate-10 {
     rotate: 10deg;
   }
-  .rotate-100 {
-    rotate: 100deg;
-  }
   .rotate-12 {
     rotate: 12deg;
   }
   .rotate-45 {
     rotate: 45deg;
+  }
+  .rotate-100 {
+    rotate: 100deg;
   }
   .rotate-180 {
     rotate: 180deg;
@@ -1890,6 +1902,9 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -1907,6 +1922,9 @@
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
+  }
+  .pt-0 {
+    padding-top: calc(var(--spacing) * 0);
   }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
@@ -2121,6 +2139,9 @@
   }
   .text-black {
     color: var(--color-black);
+  }
+  .text-blue-800 {
+    color: var(--color-blue-800);
   }
   .text-blue-950 {
     color: var(--color-blue-950);
@@ -2593,6 +2614,13 @@
   }
   .group-hover\:underline {
     &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
+  }
+  .hover\:underline {
+    &:hover {
       @media (hover: hover) {
         text-decoration-line: underline;
       }
