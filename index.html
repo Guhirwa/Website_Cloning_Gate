@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./src/tailwind.css">
 </head>
 <body>
-    <section class="text-white">
+    <section class="text-white mb-24">
         <div class="bg-blue-950 p-4">
             <div class="border border-gray-600 p-4">
                 <h1 class="underline text-2xl font-bold pb-6">On Friday, February 14, 2025 the  University will suspend normal operations for the Eagles victory parade</h1>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div>
-            <header class="font-extrabold text-[15px] flex items-center w-[100vw] justify-end flex-nowrap gap-5">
+            <header class="font-extrabold text-[15px] flex items-center w-[100vw] justify-end flex-nowrap gap-5 pb-36">
                 <div class="flex items-center">
                     <h1>ACADEMICS</h1>
                     <img class="h-8" src="./images/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
@@ -46,12 +46,21 @@
                     <img class="h-8" src="./images/keyboard_arrow_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
                 </div>
             </header>
+            <div class="pl-6">
+                <p class="font-extrabold text-[16px] pb-8">HEALTH SCIENCES</p>
+                <p class="font-semibold text-3xl pb-12">How Penn is helping with bird flu <br> research and disease surveillance</p>
+                <p class="font-semibold text-[16px]">Faculty are working on a new vaccine for the H5N1 virus, studying its transmission, <br> and helping the state test samples from birds and mammals.</p>
+            </div>
         </div>
     </section>
-    <section>
-        <h1>News</h1>
-        <p>Topics</p>
-        <div>
+    <section class="flex flex-col">
+        <div class="flex justify-between">
+            <h1 class="text-blue-950 pb-16 text-5xl">News</h1>
+            <div class="flex">
+                <p class="text-blue-950">Topics</p>  
+            </div>
+        </div>
+        <di v class="col-span-2 flex">
             <img src="" alt="">
             <p>HEALTH SCIENCE</p>
             <p>Catherine and Anthony Clifton make transformation gift to accelerate patient care, research, and education at Penn Medecine</p>
@@ -83,11 +92,22 @@
         </div>
     </section>
     <section>
-        <div>
-            <p>Campus & Community</p>
-            <h1>Penn Center for Innovation celebrates 10 years</h1>
-            <p>The University’s nexus for technology transfer supports researchers in their innovative efforts, from CAR T to mRNA advancements that have dramatically reshaped the world.</p>
-            <button>LEARN MORE</button>
+        <div class="h-screen relative bg-[url('https://www.upenn.edu/sites/default/files/styles/crop_2x1/public/2025-01/penn-center-innovation.jpg?h=92c5d8ae&itok=3O1cAYdA')] bg-no-repeat bg-cover object-bottom">
+            <div class="absolute border-0 border-blue-300 bg-indigo-950 max-w-md max-h-auto top-12 right-0 left-16 px-2 py-2">
+                <div class="border-1 border-gray-600 px-4 py-6 w-full text-center space-y-4">
+                    <h1 class="text-sm font-semibold text-white">
+                        Campus & Community
+                    </h1>
+                    <h2 class="group text-xl font-medium max-w-5xl text-white group-hover:underline">Penn Center for Innovation celebrates 10 years</h2>
+                    <div class="border-2 border-gray-500 w-5 mx-auto"></div>
+                    <p class="max-w-xs text-medium font-medium text-white mx-auto text-center">
+                        The University’s nexus for technology transfer supports researchers in their innovative efforts, from CAR T to mRNA advancements that have dramatically reshaped the world.
+                    </p>
+                    <button class="group rounded-full px-8 py-4 border-2 border-gray-600 mx-auto text-center text-sm text-white uppercase mt-8 group-hover:bg-white group-hover:text-red-500">
+                        Learn More
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
     <section>
